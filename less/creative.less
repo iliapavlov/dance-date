@@ -359,3 +359,25 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @gray-darker;
 }
+
+// My Custom style
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+    .row.vertical-center {
+        display: block; /* Turn off the flexible box layout */
+    }
+}
+
+.section-bg {
+    padding: 65px 0;
+    &.-bordered {
+        background-color: @gray-lighter;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
